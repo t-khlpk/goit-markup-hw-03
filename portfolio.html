@@ -12,12 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="">Web<span class="logo-color">Studio</span></a>
+      <div class="container">
+        <a class="logo" href="">Web<span class="logo-color">Studio</span></a>
       <nav>
         <ul class="site-nav list">
           <li><a class="link" href="./index.html">Студія</a></li>
@@ -31,9 +40,11 @@
           <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
     </header>
     <main>
-      <section class="project">
+      <section class="section project">
+        <div class="container">
         <h1 hidden>Портфоліо</h1>
 
         <ul class="filter">
@@ -44,9 +55,9 @@
           <li class="filter-list"><button class="filter-item" type="button">Маркетинг</button></li>
         </ul>
        
-        <ul class="list">
+        <ul class="list project-list">
           <li>
-            <img src="./images/portfolio/img-1.jpg" alt="Опис команди" />
+            <img class="project-img" src="./images/portfolio/img-1.jpg" alt="Опис команди" />
             <h2 class="project-subtitle">Технокряк</h2>
             <p class="project-text">Веб-сайт</p>
           </li>
@@ -103,10 +114,11 @@
             <p class="project-text">Додаток</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       <a class="logo" href="./index.html"
         >Web<span class="logo-color-footer">Studio</span></a
       >

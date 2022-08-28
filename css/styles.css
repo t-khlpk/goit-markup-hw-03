@@ -15,6 +15,39 @@ body {
   color: var(--title-color);
   letter-spacing: 0.03em;
 }
+/* rest */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height:auto;
+}
+ 
+ .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+   
+} 
 /* утиліти */
 
 ul {
@@ -33,7 +66,16 @@ ul {
   color: var(--accent-color);
 }
 /* header */
+.header .container {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+}   
 .logo {
+  margin-right: auto;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -45,6 +87,21 @@ ul {
     color: var(--logo-color)
 }
 /* nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+      
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  
+    }  
+
 .list .link  {
   font-weight: 500;
   line-height: 1.14;
@@ -65,11 +122,20 @@ ul {
     color: var(--accent-color);
     text-decoration: none;
 }
+
+
 /* hero */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero{
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
     background-color: var(--primary-bghero-color);
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,6 +146,7 @@ ul {
 }
 
 .hero-button {
+  
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -91,7 +158,14 @@ ul {
   color: var(--primary-white-color);
 }
 /* Переваги */
+.benefits-list
+{display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;}
+
 .benefits-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -107,7 +181,14 @@ ul {
   color: var(--text-color)
 }
 /* Особливості */
+.features-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 .features-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -119,7 +200,9 @@ ul {
 .team{
   background-color: var(--primary-section-color) ;
 }
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -127,7 +210,16 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-color)
 }
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+}
 .team-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -151,6 +243,7 @@ ul {
     color: var(--primary-white-color);
 }
 .address-map {
+  margin-bottom: 9px;
   font-size: 14px;
  line-height: 1.71;
  letter-spacing: 0.03em;
@@ -159,6 +252,7 @@ ul {
  text-decoration: none; 
 }
 .address-mail,.adress-tel {
+  margin-bottom: 9px;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -176,6 +270,12 @@ text-decoration: none;
 color:var(--accent-color);
 }
 /* portfolio project */
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 .filter-item:hover,
 .filter-item:active,
 .filter-item:focus {
@@ -191,9 +291,20 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-color);
 }
-
+.project-list{
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.project-img {
+  width: 370px;
+}
 .project-subtitle {
-    font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
