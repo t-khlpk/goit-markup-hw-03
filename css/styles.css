@@ -24,7 +24,9 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
+ul {
+padding-left: 0px;
+}
 h1,
 h2,
 h3,
@@ -61,21 +63,21 @@ ul {
 .tel:hover,
 .mail:focus,
 .mail:hover,
-.link:hover,
-.link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 /* header */
 .header .container {
   display: flex;
   align-items: center;
- justify-content: center;
+ 
 }   
 .logo {
+  margin: 0px;
+  margin-left: auto;
   margin-right: auto;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -89,16 +91,19 @@ ul {
 /* nav */
 .site-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-      
+  margin:0px;
+  margin-right: 93px;
+     
 }
+.site-nav .site-nav-item+ .site-nav-item {
+  margin-left: 50px;
+}
+
 .nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
+  margin: 0;
+  margin-left: auto;
   
     }  
 
@@ -132,10 +137,17 @@ ul {
 .hero{
   /* padding-top: 200px;
   padding-bottom: 200px; */
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
     background-color: var(--primary-bghero-color);
 }
 .hero-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
   margin-bottom: 30px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -151,9 +163,13 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
@@ -239,6 +255,10 @@ ul {
 .footer{
     background-color: var(--primary-bghero-color);
 }
+.footer .logo, 
+.footer-list {
+  margin-left: 215px;
+}
 .logo-color-footer{
     color: var(--primary-white-color);
 }
@@ -290,6 +310,9 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-color);
+background: #F5F4FA;
+border-radius: 4px;
+border: 1px solid transparent;
 }
 .project-list{
   display: flex; 
@@ -297,6 +320,11 @@ color: var(--title-color);
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 34px;
+
+}
+.project-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 .project-img {
   width: 370px;
