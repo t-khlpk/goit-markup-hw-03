@@ -19,11 +19,11 @@ body {
 html {
   box-sizing: border-box;
 }
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: inherit;
-}
+} */
 ul {
 padding-left: 0px;
 }
@@ -54,6 +54,8 @@ img {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .hero {
   background-color: var(--primary-bghero-color);
@@ -74,9 +76,7 @@ ul {
  
 }   
 .logo {
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
+   margin-right: 93px;
   display: flex;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -92,11 +92,13 @@ ul {
 .site-nav {
   display: flex;
   margin:0px;
-  margin-right: 93px;
-     
+      
 }
 .site-nav .site-nav-item+ .site-nav-item {
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .nav {
@@ -126,6 +128,9 @@ ul {
 .link-activ{
     color: var(--accent-color);
     text-decoration: none;
+    padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 
@@ -135,8 +140,8 @@ ul {
   padding-bottom: 94px;
 }
 .hero{
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
   padding-right: 0;
   padding-left: 0;
   text-align: center;
@@ -197,6 +202,9 @@ ul {
   color: var(--text-color)
 }
 /* Особливості */
+.features {
+  padding-top: 0;
+}
 .features-list{
   display: flex;
   align-items: center;
@@ -216,7 +224,10 @@ ul {
 .team{
   background-color: var(--primary-section-color) ;
 }
-
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -234,7 +245,6 @@ ul {
   
 }
 .team-item {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -254,11 +264,13 @@ ul {
 /* footer */
 .footer{
     background-color: var(--primary-bghero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.footer .logo, 
+/* .footer .logo, 
 .footer-list {
   margin-left: 215px;
-}
+} */
 .logo-color-footer{
     color: var(--primary-white-color);
 }
@@ -320,7 +332,7 @@ border: 1px solid transparent;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-top: 34px;
+  margin-top: 50px;
 
 }
 .project-item {
